@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reggie Smith | Portfolio</title>
+  <meta name="description" content="Reggie Smith — Computer Science (OSU, expected Spring 2026). Projects in full-stack web, testing/CI, databases, and systems." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1 class="brand__title">Reggie Smith</h1>
+        <p class="brand__subtitle">B.S. Computer Science (OSU, expected Spring 2026) • Full-Stack / Software Engineering</p>
+      </div>
+
+      <!-- Keep nav identical on every page  -->
+      <nav class="nav">
+        <a class="nav__link" href="/">Home</a>
+        <a class="nav__link" href="/resume/">Resume</a>
+        <a class="nav__link" href="/projects/">Projects</a>
+        <a class="nav__link" href="/coursework/">Coursework</a>
+        <a class="nav__link" href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I’m a computer science student at Oregon State University focused on building practical software with clean interfaces,
+        testable logic, and reliable delivery. My work spans full-stack web development, automated testing/CI, database design,
+        and systems/security and data structures coursework.
+      </p>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>Focus Areas</h2>
+        <ul class="list">
+          <li>Full-stack web apps (React + Node/Express + DB)</li>
+          <li>Automated testing + CI workflows (GitHub Actions)</li>
+          <li>Relational design + CRUD interfaces</li>
+          <li>Data Structures</li>
+          <li>Systems and security fundamentals</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Quick Links</h2>
+        <ul class="list">
+          <li><a href="/resume/">Resume →</a></li>
+          <li><a href="/projects/">Projects →</a></li>
+          <li><a href="/coursework/">Coursework →</a></li>
+          <li><a href="/contact/">Contact →</a></li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Featured Work</h2>
+
+      <article class="project">
+        <h3 class="project__title">Micro Database (CRUD Web Interface)</h3>
+        <p class="project__desc">
+          Relational schema + admin UI for managing records. Focus: data modeling, queries, and user workflows.
+        </p>
+        <p class="project__links">
+          <a href="https://github.com/sreg23/micro_database">GitHub repo</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">Quote Generator Microservice</h3>
+        <p class="project__desc">
+          Microservice with documented request/response behavior and tests. Focus: service boundaries and integration.
+        </p>
+        <p class="project__links">
+          <a href="https://github.com/sreg23/quote_generator">GitHub repo</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">CS 290 UI Demo</h3>
+        <p class="project__desc">
+          Frontend web app built for OSU CS 290 (Web Development). Focus: client-side UI behavior and structure.
+        </p>
+        <p class="project__links">
+          <a href="https://github.com/sreg23/cs361-UI-demo">GitHub repo</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small>© <span id="year"></span> Reggie Smith</small>
+      <small><a href="https://github.com/sreg23">GitHub</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
