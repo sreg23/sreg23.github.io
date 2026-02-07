@@ -26,6 +26,16 @@ body {
   background: #ffffff;
 }
 
+.brand__title {
+  color: var(--accent);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.brand__subtitle {
+  margin: 0.5rem 0 0;          /* tighter */
+}
+
 /* --- Nav spacing --- */
 .nav {
   margin-top: 0.75rem;         /* tighter */
@@ -64,19 +74,6 @@ main.container {
   --accent: #2563eb; /* blue-600 */
 }
 
-:root {
-  --accent: #2563eb; /* blue-600 */
-}
-
-.brand__title {
-  color: var(--accent);
-  margin: 0;
-  line-height: 1.1;
-}
-
-.brand__subtitle {
-  margin: 0.5rem 0 0;          /* tighter */
-}
 
 .nav__link {
   text-decoration: none;
