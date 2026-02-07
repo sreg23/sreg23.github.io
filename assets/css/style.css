@@ -20,7 +20,7 @@ body {
 }
 
 /* Header / Nav */
-.site-header 
+.site-header {
   padding: 1.25rem 0 0.75rem;   /* was too tall */
   border-bottom: 1px solid #e5e7eb;
   background: #ffffff;
