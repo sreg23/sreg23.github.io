@@ -33,6 +33,18 @@ body {
   gap: 1.25rem;
 }
 
+:root {
+  --accent: #2563eb; /* blue-600 */
+}
+
+:root {
+  --accent: #2563eb; /* blue-600 */
+}
+
+.brand__title {
+  color: var(--accent);
+}
+
 .nav__link {
   text-decoration: none;
   font-weight: 500;
@@ -43,14 +55,9 @@ body {
   color: #111827;
 }
 
-.nav__link:link,
-.nav__link:visited {
-  color: #374151; /* slate-700 */
-}
-
-.nav__link.nav__link--active {
-  color: #111827;
-  border-bottom: 2px solid #2563eb;
+.nav__link--active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 0.25rem;
 }
 
