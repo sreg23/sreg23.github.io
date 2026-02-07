@@ -1,12 +1,25 @@
-// assets/js/main.js
+(function () {
+  function normalizePath(path) {
+    // Remove query/hash
+    path = (path || "").split("?")[0].split("#")[0];
 
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPath = window.location.pathname;
+    // Treat /contact/index.html as /contact/
+    path = path.replace(/index\.html$/i, "");
 
-  document.querySelectorAll(".nav__link").forEach(link => {
-    if (link.getAttribute("href") === currentPath) {
-      link.classList.add("nav__link--active");
-    }
+    // Ensure trailing slash for non-root paths
+    if (path !== "/" && !path.endsWith("/")) path += "/";
+
+    return path;
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const current = normalizePath(window.location.pathname);
+
+    document.querySelectorAll(".nav__link").forEach((a) => {
+      const href = a.getAttribute("href");
+      const target = normalizePath(href);
+
+      a.classList.toggle("nav__link--active", target === current);
+    });
   });
-});
-
+})();
