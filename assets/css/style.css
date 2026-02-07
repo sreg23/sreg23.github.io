@@ -20,17 +20,44 @@ body {
 }
 
 /* Header / Nav */
-.site-header {
-  background: #ffffff;
+.site-header 
+  padding: 1.25rem 0 0.75rem;   /* was too tall */
   border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
 }
 
+/* --- Nav spacing --- */
 .nav {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem 1.25rem;
+  margin-top: 0.75rem;         /* tighter */
+  padding: 0.5rem 0;           /* remove extra vertical padding */
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
+}
+
+/* --- Main spacing (sections) --- */
+main.container {
+  padding-top: 1.5rem;         
+  padding-bottom: 2.5rem;
+}
+
+.card {
+  padding: 1.25rem;            
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.grid {
+  gap: 1.25rem;                /* reduce gap between cards */
+}
+
+/* Reduce the “stacked section” spacing */
+.card + .card,
+.grid + .card,
+.card + .grid {
+  margin-top: 1.25rem;
 }
 
 :root {
@@ -43,6 +70,12 @@ body {
 
 .brand__title {
   color: var(--accent);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.brand__subtitle {
+  margin: 0.5rem 0 0;          /* tighter */
 }
 
 .nav__link {
