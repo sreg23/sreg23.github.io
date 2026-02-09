@@ -74,6 +74,24 @@ main.container {
   --accent: #2563eb; /* blue-600 */
 }
 
+/* Mobile-friendly nav */
+.nav {
+  flex-wrap: wrap;          /* wrapping instead of clipping */
+  justify-content: center;  
+  row-gap: 0.5rem;          
+}
+
+/* Optional: slightly tighter on very small screens */
+@media (max-width: 480px) {
+  .nav {
+    gap: 1rem;              /* reduce horizontal gap */
+  }
+
+  .nav__link {
+    padding: 0.25rem 0;     /* slightly larger tap target without adding width */
+  }
+}
+
 
 .nav__link {
   text-decoration: none;
